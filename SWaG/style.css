@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 60%;
+    border: 3px;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.navlist{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.navlist li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navlist li a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.rightNav{
+    background-color: black;
+    width: 70%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 9px;
+}
+
+.bg{
+    background-color:rgb(165, 163, 175);
+}
+.background{
+    background: rgba(0, 0, 0, 0.5)url('bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firsthalf{
+    width: 80%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf{
+    width: 30%;
+}
+
+.secondhalf img{
+    border: 4px solid white;
+    border-radius: 150px;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 41px;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    background: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+}
+
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    font-family:sans-serif;
+    padding: 10px;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0 200px;
+}
+
+.sectiontag{
+    padding: 16px 0;
+}
+
+.thumbnail img{
+    width: 200px;
+    border: 5px solid black;
+    margin-top: 19px;
+    border-radius: 26px;
+}
+
+.contact{
+    background-color: rgb(129, 64, 190);
+    height: 533px;
+}
+
+.text-center{
+    text-align: center;
+    padding-top: 11px;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+.form{
+    max-width: 500px;
+    margin: 42px auto;
+}
+
+.form-input{
+    width: 450px;
+    margin-top: 30px 0;
+    font-size: 19px;
+    padding: 5px 19px;
+    border: 6px solid black;
+    border-radius: 6px;
+
+}
+
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;   
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width:600px){
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 472px;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .btn{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px 0px;
+    }
+
+    .logo img{
+        width: 90%;
+    }
+
+}
